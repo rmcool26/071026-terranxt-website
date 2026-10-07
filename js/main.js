@@ -5,13 +5,13 @@
 
   // Header + footer (edit once, applies to all pages)
   $('#site-header').outerHTML = '<header class="site-header"><div class="container bar">'
-    + '<a class="logo" href="index.html"><i>t</i>terranxt</a>'
+    + '<a class="logo" href="index.html"><img src="assets/logos/terranxt.png" alt="Terranxt" height="36" style="display:block;height:36px;width:auto"></a>'
     + '<nav class="nav">' + T.nav.map(function(n){ return '<a href="'+n[0]+'"'+(n[2]===page?' class="active"':'')+'>'+n[1]+'</a>'; }).join('') + '</nav>'
     + '<div class="row"><a class="btn btn-ghost btn-sm" href="products.html">Log in</a><a class="btn btn-primary btn-sm" href="contact.html">Request a demo</a></div>'
     + '</div></header>';
 
   $('#site-footer').outerHTML = '<footer class="site-footer"><div class="container cols">'
-    + '<div class="col"><b style="font-size:20px">terranxt</b><span>Solar projects, on one platform.</span></div>'
+    + '<div class="col"><img src="assets/logos/terranxt.png" alt="Terranxt" style="height:32px;width:auto;align-self:flex-start"><span>Solar projects, on one platform.</span></div>'
     + '<div class="col"><b>Portals</b>' + T.portals.map(function(p){ return '<a href="'+p.url+'" target="_blank" rel="noopener">pvNXT '+p.name+'</a>'; }).join('') + '</div>'
     + '<div class="col"><b>Company</b><a href="company.html">About</a><a href="roadmap.html">Roadmap</a><a href="contact.html">Contact</a><a href="https://www.astongreens.com" target="_blank" rel="noopener">Astongreens</a></div>'
     + '<div class="col"><b>Legal</b><a href="#">Privacy</a><a href="#">Terms</a></div>'
